@@ -1,0 +1,14 @@
+<%- include("./partials/header") %>
+
+<form action="/todo-list" method="POST" enctype="multipart/form-data">
+    <p>
+        <div class="input-text-lg">Username</div>
+        <input type="text" name="username" class="input-text-lg">
+    </p>
+    <div class="input-text-lg">Password</div>
+    <input type="text" name="password" class="input-text-lg">
+    <p><input type="submit" value="Login" class="input-text-lg"></p>
+</form>
+
+
+<%- include("./partials/footer") %>

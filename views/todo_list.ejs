@@ -1,0 +1,39 @@
+<%- include("./partials/header") %>
+
+<div>
+    <h2>Enter a title and list items.</h2>
+</div>
+
+<h2>
+    <% items.forEach((list) => { %>
+    <%= list.title %>
+    <% }) %>
+</h2>
+
+<p>
+    <form action="/title" method="POST" enctype="multipart/form-data">
+        <div>Title</div>
+        <input type="text" name="title">
+        <input type="submit" value="Submit">
+    </form>
+</p>
+<p>
+    <form action="/list" method="POST" enctype="multipart/form-data">
+        <div>List Item</div>
+        <input type="text" name="items_given">
+        <input type="submit" value="Submit">
+    </form>
+</p>
+<form action="/delete" method="POST" enctype="multipart/form-data">
+    <input type="submit" value="Delete Items">
+</form>
+
+<ul>
+    <% for (let x of items[0].things) { %>
+    <li>
+        <%= x %>
+    </li>
+    <%} %>
+</ul>
+
+<%- include("./partials/footer") %>
