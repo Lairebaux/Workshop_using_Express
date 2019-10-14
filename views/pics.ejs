@@ -1,0 +1,25 @@
+<%- include("./partials/head") %>
+<%- include("./partials/header") %>
+
+
+
+<div class="container">
+    <form action="/image" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Upload">
+    </form>
+</div>
+<div>
+    <%= typeof msg != "undefined" ? msg : "" %>
+</div>
+
+<div>
+
+    <img src="<%= typeof file != 'undefined' ? file : '' %>">
+</div>
+
+
+
+
+
+<%- include("./partials/footer") %>

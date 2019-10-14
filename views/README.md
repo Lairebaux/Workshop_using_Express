@@ -1,0 +1,1 @@
+### In this repo I replicated the workshop exercises. I combine all exercises into one app and use a template engine.

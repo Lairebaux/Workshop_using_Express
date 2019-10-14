@@ -1,16 +1,18 @@
-<%- include("./partials/header") %>
+<%- include("./partials/head") %>
 
-<p>
-    <form action="/signup" method="POST" enctype="multipart/form-data">
+<div class="container">
+
         <p>
-            <div class="input-text-sg">Username</div>
-            <input type="text" name="username" class="input-text-sg">
+            <form action="/signup" method="POST" enctype="multipart/form-data">
+                <p>
+                    <div class="input-text-sg">Username</div>
+                    <input type="text" name="username" class="input-text-sg">
+                </p>
+                <div class="input-text-sg">Password</div>
+                <input type="text" name="password" class="input-text-sg">
+                <p><input type="submit" value="Signup" class="input-text-sg"></p>
+            </form>
         </p>
-        <div class="input-text-sg">Password</div>
-        <input type="text" name="password" class="input-text-sg">
-        <p><input type="submit" value="Signup" class="input-text-sg"></p>
-    </form>
-</p>
-
+</div>
 
 <%- include("./partials/footer") %>

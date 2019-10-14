@@ -1,41 +1,26 @@
+@media(min-width: 768px) { 
+    .nav li  {
+        display: inline-flex;
+    }
+} 
+
 * {
     box-sizing: border-box;
 }
 
-.signup-login-btn {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+body {
+    margin: 0;
 }
 
-.signup-login-btn > a {
-    border-radius: 10px;
-    color: white;
-    font-size: 24px;
+
+.container {
+    align-items: center; 
+    display: flex;
+    justify-content: center; 
     margin: 20px;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
+    width: auto;
 }
 
-.container{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 80px;
-}
-
-.container-list{
-    display: block;
-}
-
-.login-btn {
-    background-color: blue;
-}
-
-.signup-btn {
-    background-color: red;
-}
 
 .footer {
     bottom: 0px;
@@ -44,11 +29,25 @@
     text-align: center;
 }
 
+
 input {
     background-color: white;
     border-radius: 4px;
     font-size: 18px;
     padding: 10px;
+}
+
+
+.input-text-lg {
+    background-color: white;
+    border-color: blue;
+    font-size: 18px;
+}
+
+.input-text-pc {
+    background-color: white;
+    border-color: lime;
+    font-size: 18px;
 }
 
 .input-text-sg {
@@ -57,9 +56,48 @@ input {
     font-size: 18px;
 }
 
-.input-text-lg {
-    background-color: white;
-    border-color: blue;
-    font-size: 18px;
+.items-list {
+    list-style-type: inside;
+}
+
+.login-btn {
+    background-color: blue;
+}
+
+.nav {
+    background-color: blue; /* if background-image not supported*/
+    background-image: linear-gradient(to right, red, blue);
+    overflow: hidden;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 14px 16px 14px 0px;
+
+}
+
+.nav  li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.signup-btn {
+    background-color: red;
+}
+
+.signup-login-btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-login-btn  >a {
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
 }
 
